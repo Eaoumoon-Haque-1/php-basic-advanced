@@ -93,7 +93,7 @@
 <body>
     <div class="calc-container">
         <h2>Simple Calculator</h2>
-        <form method="post" action="<?php echo $_SERVER["PHP_SELF"]; ?>" id="calcForm" class="calc-form">
+        <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" id="calcForm" class="calc-form">
             <input type="number" id="num1" name="num1">
             <select name="operator">
                 <option value="add">+</option>
